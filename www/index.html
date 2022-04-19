@@ -1,82 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Bootstrap Example</title>
+      <title>Person Form</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/bootstrap.min.css">
 
       <!-- Custom styles for this template -->
       <link href="css/navbar-fixed-top.css" rel="stylesheet">
+       
+       </style>
+       <style>
+         .line{
+ column-gap: 10px;
+}
+      </style>
    </head>
    <body>
-      <!-- Fixed navbar -->
-      <nav class="navbar navbar-default navbar-fixed-top">
-         <div class="container">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="#">Project name</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-               <ul class="nav navbar-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li ><a href="profile.html">Profile</a></li>
-                  <li ><a href="statistic.html">statistic</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Profile</a></li>
-                      <li><a href="#">Logout</a></li>
-                    </ul>
-                  </li>
-               </ul>
-            </div><!--/.nav-collapse -->
-         </div>
-      </nav>
-
+   <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-         <h1>AHMAD FAWWAZ BIN ABDUL AZIZ</h1>
-         <div class="jumbotron" style="display: flex; flex-direction: column; text-align: center;">
-            <img src="gmbrResume.jpeg" alt="Hensem" width="260px" height="300px">
-
-            <p style="margin-left: 10px; text-align: justify;">Assalamualaikum my name is Ahmad Fawwaz B Abdul Aziz. I am 21 years old. My
-               matric number is S59315. I studies at Universiti Malaysia Terengganu located in Kuala Nerus, Terengganu.
-               I pursue my study as an undergraduate student in Bachelor of Computer Science Mobile Computing
-               with Honours.</p> 
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LAB 2 S59315</a>
          </div>
+         <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="index.html">Home</a></li>
+               <li><a href="profile.html">Profile</a></li>
+               <li><a href="statistics.html">Statistics</a></li>
+               <li><a href="#about">About</a></li>
+               <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                   <li><a href="#">Profile</a></li>
+                   <li><a href="#">Logout</a></li>
+                 </ul>
+               </li>
+            </ul>
+         </div><!--/.nav-collapse -->
+      </div>
+   </nav>
+<div class="container">
+   <h1>Person Form</h1>
+   <hr>
+   <div class="alert alert-danger alert-dismissible fade in">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+    </div>
+    <form action="" style="width: 90%;" class="container">
+        <div class="line" style="display: flex; flex-direction: row;">
+            <p style="width: 33%;">Title</p>
+        
+            <p style="width: 33%;">First Name</p>
+            <p style="width: 33%;">Last Name</p>
+        </div>
 
-</div>
-         <div class="well">
-            <div class="row">
-               <div class="col-md-6" style="color: blue; background-color: yellow">   
-                  Column left         
-               </div>
-               <div class="col-md-6" style="color: yellow; background-color: blue">      
-                  Column right      
-               </div>
+        <div class="line" style="display: flex; flex-direction: row;">
+
+            <input type="text" placeholder="Mr." class="form-control col-sm-4"/>
+            <input type="text" placeholder="Ahmad Fawwaz" class="form-control col-sm-4"/>
+            <input type="text" placeholder="Abdul Aziz" class="form-control col-sm-4"/>
+        
+        </div>
+        <form action="" style="width: 100%;" class="container">
+         <div class="line" style="display: flex; flex-direction: row;">
+             <p style="width: 50%;">Gender</p>
+             <p style="width: 50%;">Date</p>
+
             </div>
-         </div>
-<nav class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container">
-    <!--div class="well"-->
-            <div class="row">
-               <div class="col-md-12">   
-                  <p>This web app created by: &copy; S59315</p>        
-               </div>
+            <div class="line"style="display: flex; flex-direction: row;">
+                <select class= "form-control"name="gender"style="width: 50%;">
+                    <option value="none" selected></option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">other</option>
+                   </select>
+                <input type="date" class="form-control"style="width: 50%;"/>
+                
             </div>
-         </div>
-      
-  </div>
-</nav>
-         
-
-      <script src="js/jquery-3.2.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-   </body>
-</html>
+            <br>
+            <div class="line" style="display: flex; flex-direction: row;">
+             <p style="width: 50%;" for="gender">Address</p>
+          </div>
+          <div class="line" style="display: flex; flex-direction: row;">
+             <input type="text" placeholder="Street" class="form-control form-control-lg"/>
+          </div>
+          <br>
+          <div class="line" style="display: flex; flex-direction: row;">
+             <input type="text" placeholder="City" class="form-control" style="width: 50%;"/>
+             <input type="text" placeholder="State" class="form-control" style="width: 50%;"/>
+          </div>
+          <br>
+          <div class="line" style="display: flex; flex-direction: row;">
+             <input type="text" placeholder="Post Code" class="form-control" style="width: 50%;"/>
+             <select class="form-control form-control-lg" style="width: 50%;">
+                <option value="Country">Country</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Cambodia">Cambodia</option>
+             </select>
+          </div> 
+          <br>
+          <div style="text-align: right;">
+          <button class="btn btn-primary" style="width: 25%;">Register</button>
+          </div>   
+               
+        </form> 
+        <br>
+        <div class="container">
+        <div style="overflow-y:scroll; height:250px;">
+        <table  class="table table-hover">
+          <thead style="background-color: rgb(108, 123, 224); color: white;">
+            <tr>
+              <th scope="col">Class name</th>
+              <th scope="col">Type</th>
+              <th scope="col">Hours</th>
+              <th scope="col">Trainer</th></th>
+              <th scope="col">Spots</th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Like a butterfly</td>
+              <td>Boxing</td>
+              <td>9:00 AM - 11:00 AM</td>
+              <td>Aaron Chapman</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Mind & Body</td>
+              <td>Yoga</td>
+              <td>8:00 AM - 9:00 AM</td>
+              <td>Adam Stewart</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Crit Cardio</td>
+              <td>Gym</td>
+              <td>9:00 AM - 10:00 AM</td>
+              <td>Aaron Chapman</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Wheel Pose Full Posture</td>
+              <td>Yoga</td>
+              <td>7:00 AM - 8:30 AM</td>
+              <td>Donna Wilson</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Playful Dancer's Flow</td>
+              <td>Yoga</td>
+              <td>8:00 AM - 9:00 AM</td>
+              <td>Donna Wilson</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Zumba Dance</td>
+              <td>Dance</td>
+              <td>5:00 PM - 7:00 PM</td>
+              <td>Donna Wilson</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Cardio Blast</td>
+              <td>Gym</td>
+              <td>5:00 PM - 7:00 PM</td>
+              <td>Randy Porter</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Pilates Reformer</td>
+              <td>Gym</td>
+              <td>8:00 AM - 9:00 AM</td>
+              <td>Randy Porter</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Supple Spine and Shoulders</td>
+              <td>Yoga</td>
+              <td>6:30 AM - 8:00 AM</td>
+              <td>Randy Porter</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Yoga for Divas</td>
+              <td>Yoga</td>
+              <td>9:00 AM - 11:00 AM</td>
+              <td>Donna Wilson</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Virtual Cycle</td>
+              <td>Gym</td>
+              <td>8:00 AM - 9:00 AM</td>
+              <td>Randy Porter</td>
+              <td>20</td>
+            </tr>
+          </tbody>
+        </table>        
+       </div>
+    
+          <script src="js/jquery-3.2.1.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+    
+       </body>
+    </html>
